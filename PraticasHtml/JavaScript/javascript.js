@@ -7,6 +7,7 @@
 let nome = "Bruno";
 let sobrenome;
 const e = 2.78;
+let itensChurrasco = [];
 
 if (nome === "Bruno") {
     sobrenome = "Alves";
@@ -124,3 +125,29 @@ let frutas = ["Maçã", "Banana", "Laranja"];
 frutas.forEach(function (fruta) {
     console.log(fruta);
 });
+
+itensChurrasco.push("Carne");
+itensChurrasco.push("Linguiça");
+itensChurrasco.push("Cerveja");
+itensChurrasco.push("Refrigerante");
+
+itensChurrasco.forEach((e,i)=> {
+    console.log(i+"-"+e);
+});
+
+nome = "João Victor Motta";
+console.log(nome.split("").reverse().join(""));
+
+//FILTER
+    
+console.log(itensChurrasco.filter( (e,i)=> {return i!=3}));
+
+console.log(itensChurrasco.filter( (e,i)=> {
+    return e.split("").includes("p");
+}));
+
+
+console.log(JSON.stringify(itensChurrasco));
+
+console.log(JSON.parse(JSON.parse("[\"bla\" , \"bla1\"]")));
+console.log(array2[1]);
